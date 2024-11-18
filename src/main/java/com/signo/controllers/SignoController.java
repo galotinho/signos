@@ -43,6 +43,7 @@ public class SignoController {
         	signo.setNome(signoDetails.getNome());
         	signo.setIdade(signoDetails.getIdade());
         	signo.setSigno(signoDetails.getSigno());
+            signo.setTelefone(signoDetails.getTelefone());
             signoRepository.save(signo);
             return ResponseEntity.ok(signo);
         } else {
