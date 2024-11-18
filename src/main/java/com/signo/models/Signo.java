@@ -19,13 +19,17 @@ public class Signo {
     @Column(nullable = false)
     private String signo;
 
+    @Column(nullable = false)
+    private String telefone;
+
     public Signo() {
     }
 
-    public Signo(String nome, Integer idade, String signo) {
+    public Signo(String nome, Integer idade, String signo, String telefone) {
         this.nome = nome;
         this.idade = idade;
         this.signo = signo;
+        this.telefone = telefone;
     }
 
     public Long getId() {
@@ -58,5 +62,13 @@ public class Signo {
 
     public void setSigno(String signo) {
         this.signo = signo;
+    }
+
+     public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }
