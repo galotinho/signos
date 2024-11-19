@@ -44,6 +44,7 @@ public class SignoController {
         	signo.setIdade(signoDetails.getIdade());
         	signo.setSigno(signoDetails.getSigno());
             signo.setTelefone(signoDetails.getTelefone());
+            signo.setEmail(signoDetails.getEmail());
             signoRepository.save(signo);
             return ResponseEntity.ok(signo);
         } else {
